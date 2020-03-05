@@ -1,0 +1,288 @@
+@font-face {
+    font-family: myEnglishfont;
+    src: url('../fontfamily/Comfortaa-Regular.ttf');
+}
+
+@font-face {
+    font-family: mychinesefont;
+    src: url('../fontfamily/GenJyuuGothic-Medium.ttf');
+}
+
+@font-face {
+    font-family: stfont;
+    src: url('../fontfamily/思源宋体SC-SemiBold.otf');
+}
+
+a:hover {
+    text-decoration: none!important;
+}
+
+html,
+body {
+    width: 100%;
+    min-width: 600px;
+    height: 100%;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.homewrapper {
+    width: 100%;
+    min-width: 600px;
+    /* border: 1px solid salmon; */
+    /* white-space: nowrap; */
+}
+
+.homewrapper ul {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    /* width: 60%; */
+    /* min-width: 800px; */
+    margin-left: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* border: 1px solid salmon; */
+    /* white-space: nowrap; */
+}
+
+.wrapper .item {
+    width: 30%;
+    height: 350px;
+    margin: 10px 11px;
+    border: 1px solid #eee;
+    padding: 5px 10px;
+}
+
+.wrapper .item h1 {
+    color: #616161;
+    font-family: "raleway-regular";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    margin: 20px 0 0 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #626262;
+    font-family: "raleway-regular", arial;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: .75em 0
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: .83em 0
+}
+
+h5 {
+    font-size: .83em;
+    margin: 1.5em 0
+}
+
+h6 {
+    font-size: .75em;
+    margin: 1.67em 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bolder
+}
+
+
+/* ul li {
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none
+} */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.services ul {
+    margin-top: 100px;
+}
+
+.services ul li {
+    list-style: none;
+    display: block;
+    width: 313px;
+    float: left;
+    /* margin-left: 80px; */
+    text-align: center;
+}
+
+.services ul li .separator {
+    display: block;
+    width: 1px;
+    height: 20px;
+    background: #f6f6f6;
+    margin: 20px auto;
+}
+
+.services ul li h2 {
+    color: #616161;
+    font-family: "raleway-bold";
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* shoplist */
+
+.shoplist {
+    padding: 0 0;
+}
+
+.shoplist ul {
+    list-style: none;
+    margin-top: 30px;
+    width: 890px;
+    padding-inline-start: 10px;
+}
+
+.shoplist ul li {
+    display: block;
+    width: 230px;
+    height: 306px;
+    margin-left: 60px;
+    float: left;
+}
+
+.shoplist ul li:first-child {
+    margin-left: 0;
+}
+
+.shoplist ul li .media .date {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 40px;
+    padding: 10px 0;
+    background: rgba(62, 62, 62, .7);
+    text-align: center;
+}
+
+.shoplist ul li .media .date span {
+    display: block;
+}
+
+.shoplist ul li .media .date .day {
+    color: #fff;
+    font-family: "raleway-bold";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.shoplist ul li .media .date .month {
+    color: #fff;
+    font-family: "raleway-regular";
+    font-size: 12px;
+}
+
+.shoplist ul li .media {
+    width: 230px;
+    height: 230px;
+    position: relative;
+}
+
+.shoplist ul li h1 {
+    color: #616161;
+    font-family: "raleway-regular";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    margin: 20px 0 0 0;
+}
+
+
+/* animate */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+
+/* users */

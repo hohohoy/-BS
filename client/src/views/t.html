@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var age = 20;
+        var jsonStr = '{"name":"lulu", "sex":"female","age":25}';
+        var obj = eval('(' + jsonStr + ')');
+        var str2 = JSON.parse(jsonStr);
+        console.log(obj);
+        console.log(str2)
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
